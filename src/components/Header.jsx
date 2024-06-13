@@ -1,55 +1,49 @@
+import aditya from "../image/adityanew.jpg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import "./Header.css";
 const Header = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-dark border-bottom border-body"
-      data-bs-theme="dark"
-    >
-      >
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-center"
-          id="navbarNavDropdown"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Projects
-              </a>
-            </li>
-          </ul>
+    <div class="container col-xxl-9 px-6 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-6 py-5 ">
+        <div class="col-10 col-sm-8 col-xl-6">
+          <img
+            src={aditya}
+            class="d-block mx-lg-auto img-fluid header-img"
+            alt="Bootstrap Themes"
+            // width="700"
+            // height="500"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Hi, I'm Aditya Singh</h1>
+          <p class="lead">
+            A passionate Full Stack Software Developer 🚀 having an experience
+            of building Web applications with JavaScript / Reactjs / Nodejs and
+            some other cool libraries and frameworks.
+          </p>
+          <div class="d-grid gap-5 d-md-flex justify-content-md-start">
+            <FaGithub size={50} />
+            <FaLinkedin size={50} />
+            <CiMail size={50} />
+            
+            
+          </div>
+          <div class="d-grid gap-5 d-md-flex justify-content-start mt-4">
+            
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Default
+            </button>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

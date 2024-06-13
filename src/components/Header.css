@@ -1,0 +1,12 @@
+.header-img{
+    border-radius: 50%;
+    width: 350px;
+    height: 150px;
+    /* object-fit:contain; */
+    /* background-color: black; */
+    
+}
+.lead{
+    font-size: 1.8rem !important;
+    font-weight: 350 !important;
+}
