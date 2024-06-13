@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      className="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top"
       data-bs-theme="dark"
     >
       
@@ -21,7 +21,7 @@ const Header = () => {
           className="collapse navbar-collapse justify-content-center"
           id="navbarNavDropdown"
         >
-          <ul className="navbar-nav display-6">
+          <ul className="navbar-nav display-6 gap-5">
             <li className="nav-item ">
               <a
                 className="nav-link active"
